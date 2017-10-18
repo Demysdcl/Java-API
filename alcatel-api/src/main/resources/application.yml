@@ -1,0 +1,11 @@
+server:
+    port: 8085
+security:
+    basic:
+        enabled: false
+spring:
+    datasource:
+        username: sa
+        password: Alcatel135$
+        driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        url: jdbc:sqlserver://172.20.19.206:1433;databaseName=ALCATEL

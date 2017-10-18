@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DCLFactor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            [v-cloak]{
+                background: red;
+            }
+        </style>
+
+    </head> 
+
+    <body >
+        <div id="app">
+            <h3 v-cloak>{{message}}</h3>
+            <h1 v-text="message"></h1>
+            <h1 v-html="intro"></h1>
+            <h1 v-show="viewed">(Show) You have viewed this page </h1>
+            <h1 v-if="viewed">(If) You have viewed this page </h1>
+            <h1 v-else>You have NOT viewed this page </h1>
+        </div>
+    </body>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue World',
+                intro: "Welcome to the Tutorial </br> <small> It is All about Vue.js</small>",
+                viewed: false
+            }
+        });
+    </script>
+</html>
